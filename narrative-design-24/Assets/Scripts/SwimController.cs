@@ -52,8 +52,10 @@ public class SwimController : MonoBehaviour
     }
 
     void Movement_performed(Vector2 inputMove) {
-        if (inputMove.y != 0) {
+        if (inputMove.y > 0) {
             rb.AddForce(inputMove.y * swimSpeed * transform.forward, ForceMode.Force);
+        } else if (inputMove.y < 0) {
+            rb.AddForce(inputMove.y * swimSpeed * 0.6f * transform.forward, ForceMode.Force);
         }
         if (inputMove.x != 0) {
             rb.AddForce(inputMove.x * swimSpeed * transform.right, ForceMode.Force);

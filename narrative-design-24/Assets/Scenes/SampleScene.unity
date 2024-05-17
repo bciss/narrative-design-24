@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e3715367bdf7c4881d7345dee1b001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swimSpeed: 5
+  swimSpeed: 100
   verticalSpeed: 0.2
   _rotationVelocity: 1
   cam: {fileID: 963194227}
@@ -1271,7 +1271,7 @@ Rigidbody:
   m_GameObject: {fileID: 731014601}
   serializedVersion: 4
   m_Mass: 5
-  m_Drag: 2
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
